@@ -11,6 +11,7 @@ html_1 = """
 </div>
 """
 st.markdown(html_1, unsafe_allow_html=True)
+
 st.markdown("")
 st.write('ผลรวม')
 cl1,cl2,cl3,cl4,cl5,cl6,cl7,cl8,cl9,cl10,cl11,cl12,cl13,cl14,cl15,cl16=st.columns(16)
@@ -31,3 +32,4 @@ cl13.write(dt['ShapeFactor2'].sum())
 cl14.write(dt['ShapeFactor3'].sum())
 cl15.write(dt['ShapeFactor4'].sum())
 cl16.write(dt['Class'].sum())
+

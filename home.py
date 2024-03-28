@@ -13,6 +13,6 @@ lottie_hello = load_lottieurl(lottie_url_hello)
 st_lottie(lottie_hello)
 
 st.page_link("home.py", label="หน้าแรก", icon="🏠")
-st.page_link("pages/Statistic.py", label="การนำเสนอข้อมูลด้วยสถิติ", icon="1️⃣")
-st.page_link("pages/Chart.py", label="การนำเสนอข้อมูลด้วยจินตทัศน์ข้อมูล", icon="2️⃣", disabled=False)
+st.page_link("pages/Statistic.py", label="การนำเสนอข้อมูลถั่วแห้งด้วยสถิติ", icon="1️⃣")
+st.page_link("pages/Chart.py", label="การนำเสนอข้อมูลถั่วแห้งด้วยจินตทัศน์ข้อมูล", icon="2️⃣", disabled=False)
 st.page_link("http://www.google.com", label="Google", icon="🌎")

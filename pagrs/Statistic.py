@@ -1,6 +1,8 @@
 import pandas as pd
+import streamlit as st
+
 dt=pd.read_csv('./data/Dry_Bean_Dataset.csv')
-st.write(dt.head(10))
+st.write(dt.head(16))
 st.write(dt.describe())
 
 st.subheader("ข้อมูลสถิติถั่วเเห้ง")

@@ -1,7 +1,7 @@
 import pandas as pd
 import streamlit as st
 
-dt=pd.read_csv('./data/Dry_Bean_Dataset.csv')
+dt=pd.read_excel'./data/Dry_Bean_Dataset.excel')
 st.write(dt.head(16))
 st.write(dt.describe())
 

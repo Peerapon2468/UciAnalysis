@@ -5,7 +5,13 @@ dt=pd.read_csv('./data/Dry_Bean_Dataset.csv')
 st.write(dt.head(16))
 st.write(dt.describe())
 
-st.subheader("ข้อมูลสถิติถั่วเเห้ง")
+html_1 = """
+<div style="background-color:#52BE80;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
+<center><h5>สถิติข้อมูลถั่วเเห้ง</h5></center>
+</div>
+"""
+st.markdown(html_1, unsafe_allow_html=True)
+st.markdown("")
 st.write('ผลรวม')
 cl1,cl2,cl3,cl4,cl5,cl6,cl7,cl8,cl9,cl10,cl11,cl12,cl13,cl14,cl15,cl16=st.columns(16)
 cl1.write(dt['Area'].sum())

@@ -1,9 +1,7 @@
 import pandas as pd
 dt=pd.read_csv('./data/Dry_Bean_Dataset.csv')
-st.write(df.head(10))
+st.write(dt.head(10))
 st.write(dt.describe())
-st.write(dt.groupby('เพศ').cou)
-
 
 st.subheader("ข้อมูลสถิติถั่วเเห้ง")
 st.write('ผลรวม')

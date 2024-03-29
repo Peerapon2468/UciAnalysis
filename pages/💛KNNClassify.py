@@ -11,7 +11,7 @@ with col2:
   st.subheader('คณะวิทยาศาสตร์และเทคโนโลยี')
 
   html_1 = """
-<div style="background-color:#76D7C4;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
+<div style="background-color:#00FFFF;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
 <center><h4>การทำนายข้อมูลโรคมะเร็งเต้านม</h4></center>
 </div>
 """

@@ -6,7 +6,7 @@ st.write(dt.head(16))
 st.write(dt.describe())
 
 html_1 = """
-<div style="background-color:#52BE80;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
+<div style="background-color:#00FFFF;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
 <center><h5>สถิติข้อมูลถั่วเเห้ง</h5></center>
 </div>
 """

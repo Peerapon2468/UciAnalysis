@@ -27,6 +27,14 @@ if st.button("พยากรณ์"):
     x_input=[[spW,spL,ptW,ptL]] # ใส่ข้อมูลสำหรับการจำแนกข้อมูล
     y_predict2=dtree.predict(x_input)
     st.write(y_predict2)
+
+    if y_predict2=='./pic/images1.jpg':
+        st.image('0')
+        st.write(y_predict2)
+    elif y_predict2=='./images0.jpg':
+        st.image('1')
+        st.write(y_predict2)
+
     st.button("ไม่พยากรณ์")
 else:
     st.button("ไม่พยากรณ์")

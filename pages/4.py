@@ -7,11 +7,11 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 
 cl1,cl2,cl3,=st.columns(3)
-with cl1
+with cl1:
     st.image('./pic/images00.jpg')
-with cl2
+with cl2:
     st.image('./pic/images01.jpg')
-with cl3
+with cl3:
     st.image('./pic/images02.jpg')
 
 from sklearn.metrics import accuracy_score

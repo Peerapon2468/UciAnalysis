@@ -7,7 +7,7 @@ import pandas as pd
 import streamlit as st
 
 html_1 = """
-<div style="background-color:#76D7C4;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
+<div style="background-color:#00FFFF;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
 <center><h4>การทำนายข้อมูลดอกไม้ด้วยเทคนิก Naive Baye</h4></center>
 </div>
 """

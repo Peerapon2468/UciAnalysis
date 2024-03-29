@@ -1,13 +1,13 @@
 import streamlit as st
 
-# st.image('./pic/Breast.png') # ข้อมูลรูปภาพตัวเอง
+st.image('./pic/Breast.jpg') # ข้อมูลรูปภาพตัวเอง
 col1, col2 = st.columns(2)
 
 with col1:
   st.header('การทำนายการเกิดโรคมะเร็งเต้านม') # ชื่อตัวเอง
   st.subheader('ชื่อ นศ.')
 with col2:
-  st.subheader('สาขาวิชาวิทยาการคอมพิวเตอร์')
+  st.subheader('สาขาวิชาวิทยาการคอม')
   st.subheader('คณะวิทยาศาสตร์และเทคโนโลยี')
 
   html_1 = """
@@ -61,9 +61,14 @@ from sklearn.neighbors import KNeighborsClassifier
 import numpy as np
 
 if st.button("ทำนายผล"):
-       # ทำนาย
+   # ทำนาย
    #dt = pd.read_csv("./data/breastcancer.csv") 
-   
+   cols=['ClumpThickness', 'UniformityofCellSize',
+       'UniformityofCellShape', 'MarginalAdhesion', 'SingleEpithelialCellSize',
+       'BareNuclei', 'BlandChromatin', 'NormalNucleoli', 'Mitoses']
+
+   X = dt[cols]
+   y = dt['Class   '] 
 
    Knn_model = KNeighborsClassifier(n_neighbors=3)
    Knn_model.fit(X, y)
@@ -75,12 +80,11 @@ if st.button("ทำนายผล"):
    out=Knn_model.predict(x_input)
 
    if out[0]==2:
-      st.image("./images1.jpg")
+      st.image("./pic/images1.jpg")
       st.header("ไม่เป็นมะเร็ง")
    else:
       st.image("./images0.jpg")  
       st.header("เป็นมะเร็ง")
-      
-   st.button("ไม่ทำนายผล")
+      st.button("ไม่ทำนายผล")
 else :
     st.button("ไม่ทำนายผล")

@@ -28,10 +28,10 @@ if st.button("พยากรณ์"):
     y_predict2=dtree.predict(x_input)
     st.write(y_predict2)
 
-    if y_predict2=='./pic/images1.jpg':
+    if y_predict2=='./pic/images01.jpg':
         st.image('0')
         st.write(y_predict2)
-    elif y_predict2=='./images0.jpg':
+    elif y_predict2=='./images00.jpg':
         st.image('1')
         st.write(y_predict2)
 

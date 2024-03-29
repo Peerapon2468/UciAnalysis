@@ -8,11 +8,11 @@ from sklearn.model_selection import train_test_split
 
 cl1,cl2,cl3,=st.columns(3)
 with cl1:
-    st.image('./pic/images00.jpg')
+    st.image('./pic/images03.jpg')
 with cl2:
     st.image('./pic/images01.jpg')
 with cl3:
-    st.image('./pic/images02.jpg')
+    st.image('./pic/images04.jpg')
 
 from sklearn.metrics import accuracy_score
 st.header("Decision Tree for classification")

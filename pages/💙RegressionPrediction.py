@@ -6,6 +6,8 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score,mean_squared_error
 
+st.image('./pic/images11.jpg') # ข้อมูลรูปภาพตัวเอง
+
 st.title("การพยากรณข้อมูลด้้วยเทคนิก Linear Regression")
 st.subheader("การพยากรณข้อมูลด้้วยเทคนิก stock index price")
 

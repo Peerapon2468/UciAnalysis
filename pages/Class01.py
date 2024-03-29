@@ -7,7 +7,7 @@ with col1:
   st.header('การทำนายการเกิดโรคมะเร็งเต้านม') # ชื่อตัวเอง
   st.subheader('ชื่อ นศ.')
 with col2:
-  st.subheader('สาขาวิชาวิทยาการข้อมูล')
+  st.subheader('สาขาวิชาวิทยาการคอมพิวเตอร์')
   st.subheader('คณะวิทยาศาสตร์และเทคโนโลยี')
 
   html_1 = """
@@ -63,12 +63,7 @@ import numpy as np
 if st.button("ทำนายผล"):
        # ทำนาย
    #dt = pd.read_csv("./data/breastcancer.csv") 
-  cols=['ClumpThickness', 'UniformityofCellSize',
-       'UniformityofCellShape', 'MarginalAdhesion', 'SingleEpithelialCellSize',
-       'BareNuclei', 'BlandChromatin', 'NormalNucleoli', 'Mitoses']
-
-   X = dt[cols]
-   y = dt['Class   ']  
+   
 
    Knn_model = KNeighborsClassifier(n_neighbors=3)
    Knn_model.fit(X, y)

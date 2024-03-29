@@ -39,7 +39,7 @@ if st.button("พยากรณ์"):
         st.write(y_predict2)
     elif y_predict2=='Versicolor':
         st.image('./pic/images01.jpg')
-        st.writey_predict2)
+        st.write(y_predict2)
     else:
         st.image('./pic/images02.jpg')
         st.write(y_predict2)

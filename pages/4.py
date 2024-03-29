@@ -5,8 +5,16 @@ from sklearn import tree
 from sklearn.tree import DecisionTreeClassifier
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
-from sklearn.metrics import accuracy_score
 
+cl1,cl2,cl3,=st.columns(3)
+with cl1
+    st.image('./pic/images00.jpg')
+with cl2
+    st.image('./pic/images01.jpg')
+with cl3
+    st.image('./pic/images02.jpg')
+
+from sklearn.metrics import accuracy_score
 st.header("Decision Tree for classification")
 df = pd.read_csv("./data/iris.csv")
 st.write(df.head(10))
@@ -26,15 +34,15 @@ ptL=st.number_input('Insert petallength')
 if st.button("พยากรณ์"):
     x_input=[[spW,spL,ptW,ptL]] # ใส่ข้อมูลสำหรับการจำแนกข้อมูล
     y_predict2=dtree.predict(x_input)
-    st.write(y_predict2)
-
-    if y_predict2=='':
-        st.image('./pic/images01.jpg')
-        st.write(y_predict2)
-    elif y_predict2=='':
+    if y_predict2=='Virginica':
         st.image('./pic/images00.jpg')
         st.write(y_predict2)
-
+    elif y_predict2=='Versicolor':
+        st.image(
+        st.write(y_predict2)'./pic/images01.jpg')
+    else:
+        st.image('./pic/images02.jpg')
+        st.write(y_predict2)
     st.button("ไม่พยากรณ์")
 else:
     st.button("ไม่พยากรณ์")
